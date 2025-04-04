@@ -1,0 +1,41 @@
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .sidenav-container {
+    height: 100vh;
+  }
+  
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    background-color: #fff;
+    border-right: 1px solid #ccc;
+  }
+  
+  .sidenav-header {
+    font-weight: bold;
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .menu-label {
+    margin-left: 8px;
+  }
+  
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .content {
+    padding: 20px;
+  }

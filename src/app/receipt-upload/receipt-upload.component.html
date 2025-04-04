@@ -1,0 +1,24 @@
+<mat-card class="upload-card">
+    <mat-card-title>Upload Receipts</mat-card-title>
+  
+    <mat-card-content>
+      <input type="file" multiple (change)="onFileSelected($event)" />
+  
+      <div *ngIf="selectedFiles.length > 0" class="file-list">
+        <p *ngFor="let file of selectedFiles">{{ file.name }}</p>
+      </div>
+  
+      <mat-progress-bar
+        *ngIf="isUploading"
+        mode="determinate"
+        [value]="uploadProgress">
+      </mat-progress-bar>
+    </mat-card-content>
+  
+    <mat-card-actions>
+      <button mat-raised-button color="primary" (click)="uploadFiles()" [disabled]="isUploading || selectedFiles.length === 0">
+        Upload
+      </button>
+    </mat-card-actions>
+  </mat-card>
+  
