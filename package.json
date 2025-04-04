@@ -23,6 +23,7 @@
     "@angular/service-worker": "^15.2.10",
     "@azure/msal-angular": "^4.0.7",
     "@azure/storage-blob": "^12.10.0",
+    "material-icons": "^1.13.14",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
